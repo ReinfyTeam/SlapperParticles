@@ -4,7 +4,7 @@
 Slappers can now have a particles.
 
 # Features
-- Ability to configure the distance view of the Slappers.
+- Ability to configure the particles of the Slappers.
 
 # Disclaimer
 This plugin was designed and work in pocketmine. If you are using fork/spoon of PocketMine-MP. Your issues will automatically closed.
