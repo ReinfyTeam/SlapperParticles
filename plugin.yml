@@ -1,8 +1,8 @@
 name: SlapperParticles
 version: 1.0.2
 api: 5.0.0
-main: xqwtxon\SlapperParticles\Main
-src-namespace-prefix: xqwtxon\SlapperParticles
+main: ReinfyTeam\SlapperParticles\Main
+src-namespace-prefix: ReinfyTeam\SlapperParticles
 depend: Slapper
-author: xqwtxon
+author: ReinfyTeam
 description: Slapper can now have particles!
