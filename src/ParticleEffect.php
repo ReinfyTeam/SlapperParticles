@@ -1,13 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace xqwtxon\SlapperParticlesV2;
 
 use pocketmine\scheduler\Task;
 use pocketmine\world\particle\DustParticle;
-use pocketmine\world\particle\CriticalParticle;
 use pocketmine\math\Vector3;
 use slapper\entities\SlapperHuman;
-use xqwtxon\SlapperParticlesV2\Main;
 
 class ParticleEffect extends Task {
     
@@ -22,14 +22,14 @@ class ParticleEffect extends Task {
             $this->r++;
             return;
         }
+        $config = $this->plugin->getConfig();
+        $colorA = $config->get("Color A");
+        $colorB = $config->get("Color B");
+        $colorC = $config->get("Color C");
+        if (!is_int($colorA) || !is_int($colorB) || !is_int($colorC)) {
+            return;
+        }
         foreach($this->plugin->getServer()->getWorldManager()->getWorlds() as $world){
-            $config = $this->plugin->getConfig();
-            $colorA = $config->get("Color A");
-            $colorB = $config->get("Color B");
-            $colorC = $config->get("Color C");
-            if (!is_int($colorA) || !is_int($colorB) || !is_int($colorC)) {
-                continue;
-            }
             foreach($world->getEntities() as $entity){
                 if($entity instanceof SlapperHuman){
                     $x = $entity->getLocation()->getX();
