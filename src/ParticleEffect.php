@@ -27,6 +27,9 @@ class ParticleEffect extends Task {
             $colorA = $config->get("Color A");
             $colorB = $config->get("Color B");
             $colorC = $config->get("Color C");
+            if (!is_int($colorA) || !is_int($colorB) || !is_int($colorC)) {
+                continue;
+            }
             foreach($world->getEntities() as $entity){
                 if($entity instanceof SlapperHuman){
                     $x = $entity->getLocation()->getX();
