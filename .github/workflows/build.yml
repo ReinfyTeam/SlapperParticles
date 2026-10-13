@@ -19,4 +19,5 @@ jobs:
       php-version: '8.2'
       prepare-dependencies: true
       phpstan: max
+      phpstan-paths: stubs
       retention-days: 14
