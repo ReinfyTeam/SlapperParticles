@@ -19,7 +19,10 @@ The plugin is maintained for PocketMine-MP rather than for unverified forks or s
 3. Start the server and confirm that SlapperParticles enables after Slapper.
 4. Edit `plugin_data/SlapperParticles/config.yml` if you want different particle colors.
 
-There is no standalone release artifact in this repository. Build or download the plugin through the repository's configured distribution path, and keep the `Slapper` dependency installed on the target server.
+Stable versions may be distributed as standalone PHAR assets through the
+[GitHub Releases](https://github.com/ReinfyTeam/SlapperParticles/releases)
+page. For a reproducible build, use the repository's configured build workflow,
+and keep the `Slapper` dependency installed on the target server.
 
 ## Configuration
 
