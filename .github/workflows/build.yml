@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build:
-    name: Build and analyze plugin
+    name: Build and analyze SlapperParticles plugin
     uses: NhanAZ/DevTools/.github/workflows/build-plugin.yml@6180fb4a04e5981ccb24128823970de3e8fd3830
     with:
       axolotl-ref: dfe0d07e48a9e8d5a4a242fa43ff1cd3b743a955
