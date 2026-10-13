@@ -45,7 +45,7 @@ composer install
 composer run-script analyse
 ```
 
-The repository currently provides PHPStan analysis but no dedicated runtime test suite or GitHub Actions workflow. A complete server verification still requires an API 5 server with Slapper, loaded worlds and observable SlapperHuman entities. The configured build service uses DevTools to package the plugin; user documentation refers to that function without copying a builder revision that may change over time.
+The repository provides PHPStan analysis and a GitHub Actions build workflow, but no dedicated runtime test suite. A complete server verification still requires an API 5 server with Slapper, loaded worlds and observable SlapperHuman entities. The configured build service uses DevTools to package the plugin; user documentation refers to that function without copying a builder revision that may change over time.
 
 ## Support
 
